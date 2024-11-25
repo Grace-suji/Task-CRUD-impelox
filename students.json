@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "id": "77df",
+      "name": "Gracesuji",
+      "age": 19,
+      "grade": "A",
+      "phone": 87564556,
+      "address": "5767,dgau"
+    },
+    {
+      "id": "674a",
+      "name": "renishhh",
+      "age": 25,
+      "grade": "A",
+      "phone": 68755678,
+      "address": "657868,tfsygdd"
+    },
+    {
+      "id": "1ed2",
+      "name": "Arul",
+      "age": 56,
+      "grade": "C",
+      "phone": 8767656787,
+      "address": "577,daygaui"
+    },
+    {
+      "id": "a26b",
+      "name": "sherly",
+      "age": 67,
+      "grade": "C",
+      "phone": 6788974576,
+      "address": "7567,yysgdhsgdu"
+    },
+    {
+      "id": "e48f",
+      "name": "sujinraj",
+      "age": 26,
+      "grade": "C",
+      "phone": 678946867,
+      "address": "467567,gdahd"
+    }
+  ]
+}

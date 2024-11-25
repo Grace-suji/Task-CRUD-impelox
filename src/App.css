@@ -1,0 +1,228 @@
+/* Body and Main App Container */
+body,html {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.App {
+  width: 90%;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Search Input */
+input[type="search"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Form Container */
+div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Add/Update Button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+th:hover {
+  background-color: #0056b3;
+}
+
+th::after {
+  content: '';
+  font-size: 10px;
+  position: absolute;
+  right: 8px;
+}
+
+td {
+  color: #555555;
+}
+
+/* Sort Arrows */
+th::after {
+  content: " ";
+  font-size: 12px;
+  color: white;
+  margin-left: 5px;
+}
+
+th[aria-sort="asc"]::after {
+  content: "▲";
+}
+
+th[aria-sort="desc"]::after {
+  content: "▼";
+}
+
+/* Action Buttons */
+td button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+td .edit:last-child {
+  background-color: #28a745;
+}
+
+td button:hover {
+  opacity: 0.85;
+}
+@media only screen and (min-width:320px) and (max-width:426px){
+  .input-box{
+    width: 100%;
+  }
+  .input-box button{
+    width:150px;
+    margin-left: 120px;
+    
+  }
+  .App{
+    width: 100%;
+    /* margin-left: 100px; */
+    overflow-x: hidden;
+
+    
+
+  }
+  table thead {
+    display: none;
+  }
+
+  /* Style table rows for mobile */
+  table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style individual table cells as flex items with labels */
+  table tbody tr td {
+
+    display: flex;
+    justify-content:space-between;
+    padding: 8px 8px;
+    font-size: 0.85rem;
+  }
+  .action{
+    padding-top: 30px;
+  }
+  /* Style for the action buttons in a row */
+  td[style*="display:flex"] {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* Add pseudo-elements to display labels for each cell */
+  td:nth-of-type(1)::before { content: "Name: "; font-weight: bold; }
+  td:nth-of-type(2)::before { content: "Age: "; font-weight: bold; }
+  td:nth-of-type(3)::before { content: "Grade: "; font-weight: bold; }
+  td:nth-of-type(4)::before { content: "Address: "; font-weight: bold; }
+  td:nth-of-type(5)::before { content: "Phone: "; font-weight: bold; }
+  td:nth-of-type(6)::before { content: "Actions: "; font-weight: bold; }
+  
+  /* Buttons styling for mobile */
+  td button {
+    width: 30%;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    padding: 8px 0;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+  .App{
+    width: 100%;
+    /* margin-left: 100px; */
+    overflow-x: hidden;
+
+    
+
+  }
+
+}
+  
